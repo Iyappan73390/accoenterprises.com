@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- slider -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+
+</head>
+<style>
+    .container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+</style>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle mybtn header-btn" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo.png" class="img-responsive" alt="main-logo">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse nav-list" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+              
+              <!--Carousel Gallery-->
+              <div class="tz-gallery">
+
+                <div class="row">
+        
+                    <div class="col-sm-12 col-md-4 mt-30">
+                        <a class="lightbox" href="./images/hp-vegetables.png">
+                            <img src="./images/hp-vegetables.png" alt="vegetable">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-30">
+                        <a class="lightbox" href="./images/hp-mango.png">
+                            <img src="./images/hp-mango.png" alt="mango pulp">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-30">
+                        <a class="lightbox" href="./images/hp-coconut.png">
+                            <img src="./images/hp-coconut.png" alt="coconut">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-30">
+                        <a class="lightbox" href="./images/hp-banana.png">
+                            <img src="./images/hp-banana.png" alt="banana chips">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-30">
+                        <a class="lightbox" href="./images/hp-areca.png">
+                            <img src="./images/hp-areca.png" alt="areca plates">
+                        </a>
+                    </div> 
+                    <div class="col-sm-6 col-md-4 mt-30">
+                        <a class="lightbox" href="./images/hp-jute.png">
+                            <img src="./images/hp-jute.png" alt="hp-jute">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-30">
+                        <a class="lightbox" href="./images/hp-pulse.png">
+                            <img src="./images/hp-pulse.png" alt="pulse">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-30">
+                        <a class="lightbox" href="./images/hp-coir.png">
+                            <img src="./images/hp-coir.png" alt="coir">
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        
+
+
+    <!-- contact form -->
+    <section id="contact">
+        <div class="contact-box">
+            <div class="contact-links">
+                <h3 class="heading" style="color: white;">GET IN TOUCH</h3>
+                <div class="handshake">
+                    <img src="./images/hand-shake.png" class="img-responsive">
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-item">
+                                <input type="text" name="sender" required>
+                                <label>Name:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-item">
+                                <input type="text" name="sender" required>
+                                <label>Email:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-item">
+                                <input type="text" name="sender" required>
+                                <label>Phone:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-item">
+                                <input type="text" name="sender" required>
+                                <label>City & Country:</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-item">
+                                <textarea class="" name="message" required></textarea>
+                                <label>Message:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="submit-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container-fluid pt-50 pb-50">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 footerlogo">
+                    <img src="./images/logo.png" class="img-responsive">
+                   
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5><b>Navigation</b></h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5><b>Socials</b></h5>
+                    <ul class="media-icon-ul">
+                        <li class=""><i class="fa fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/groups/14163194/" target="_blank" class="media-icon"> Linkedin</a></li>
+                        <li class=""><i class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/profile.php?id=100088829967766" target="_blank" class="media-icon"> Facebook</a></li>
+                        <li class=""><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/aacoexportandimport/" target="_blank" class="media-icon"> Instagram</a></li>
+                        <li class=""><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/AACOExports" target="_blank" class="media-icon"> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 address">
+                    <h5><b>Address</b></h5>
+                    <p>
+                        No : 7 - 29, AACO HUB,<br> 
+                        Amman kovil Street, Kallampuli,<br> 
+                        Tenkasi, Tamilnadu, India - 627856.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+</body>
+
+</html>
